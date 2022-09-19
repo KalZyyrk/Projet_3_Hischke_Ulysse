@@ -1,0 +1,7 @@
+$primary: #9356DC; 
+$secondary: #FF79DA;
+
+.grad {
+    background-image: linear-gradient($secondary, $primary);
+
+}

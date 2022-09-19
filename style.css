@@ -1,3 +1,11 @@
+.grad {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+* {
+  margin: 0;
+}
+
 body {
   max-width: 400px;
   margin: 0;
@@ -9,7 +17,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   padding: 1.4rem 0;
 }
 .title img {
@@ -19,20 +26,36 @@ body {
 .localisation {
   padding: 0.5rem 0;
   margin-top: 0;
-  background-color: lightgrey;
+  background-color: #eaeaea;
 }
 .localisation p {
   text-align: center;
 }
 
+.explore {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 15rem;
+  background-color: #f6f6f6;
+  align-items: center;
+}
+.explore-text {
+  text-align: center;
+}
+.explore-text h2 {
+  margin-bottom: 1rem;
+}
 .explore-btn {
   text-align: center;
-  padding-top: 0.3rem;
-  height: 2rem;
-  width: 75%;
-  background-color: aqua;
-  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
   margin: auto;
+  color: white;
+}
+
+.guide {
+  margin: 2rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
