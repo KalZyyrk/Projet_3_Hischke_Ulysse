@@ -1,6 +1,12 @@
 .circle {
-    &-number {
+    &-numb {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        color: white;
         background-color: $primary;
         border-radius: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
