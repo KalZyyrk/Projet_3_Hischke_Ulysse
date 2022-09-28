@@ -132,20 +132,15 @@ body {
   padding: 1rem;
 }
 
-.hearth-empty.fa-regular.fa-heart {
+i.hearth-empty.fa-regular.fa-heart {
   display: contents;
 }
-.hearth-empty.fa-regular.fa-heart:hover {
+i.hearth-empty.fa-regular.fa-heart:hover {
   display: none;
 }
 
-i.hearth-full.fa-solid.fa-heart {
+i.hearth-full.fa-solid.fa-heart, i.hearth-full.fa-heart.hearth-empty.fa-regular:hover {
   display: none;
-}
-i.hearth-full.fa-solid.fa-heart:hover {
-  display: contents;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
 }
 
 .heart-icon {

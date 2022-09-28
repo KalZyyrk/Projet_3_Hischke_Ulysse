@@ -117,19 +117,15 @@ body {
         }
     }
 }
-.hearth-empty.fa-regular.fa-heart {
+i.hearth-empty.fa-regular.fa-heart {
     display: contents;
     &:hover {
         display: none;
+        @extend .fa-solid
     }
 }
 i.hearth-full.fa-solid.fa-heart{
     display: none;
-    &:hover {
-        display: contents;
-        background-image: $grade;
-        -webkit-background-clip: text;
-    }
 }
 .heart-icon {
     display: flex;
