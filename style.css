@@ -9,6 +9,50 @@
   justify-content: center;
 }
 
+.title {
+  position: relative;
+}
+.title span {
+  position: absolute;
+  left: 1.5rem;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  z-index: 1;
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
+}
+.menu-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -2rem;
+  padding: 1rem;
+}
+.menu-title h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+}
+.menu-part-card {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-part-card-select {
+  display: none;
+  background-color: #a9e0d1;
+}
+.menu-part-card-select i {
+  color: white;
+}
+
 * {
   margin: 0;
 }

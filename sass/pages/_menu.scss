@@ -1,0 +1,43 @@
+.title{
+    position: relative;
+    & span {
+        position: absolute;
+        left: 1.5rem;
+        font-size: 1.6rem;
+    }
+}
+img {
+    width: 100%;
+    object-fit: cover;
+} 
+.menu {
+    position: relative;
+    z-index: 1;
+    background-color: $lightbackground;
+    border-radius: 2rem 2rem 0 0;
+    &-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -2rem;
+        padding: 1rem;
+        & h1 {
+            font-family: $title-font;
+            font-weight: 300;
+        }
+    }
+    &-part {
+        &-card{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            &-select {
+                display: none;
+              background-color: $new-bg;
+              & i {
+                color: white;
+              }
+            }
+        }
+    }
+}
