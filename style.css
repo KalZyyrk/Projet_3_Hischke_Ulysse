@@ -105,16 +105,28 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 3rem;
 }
 .restaurant h2 {
   align-self: flex-start;
   margin-bottom: 1.5rem;
+  margin-left: 1rem;
 }
 .restaurant-card {
+  position: relative;
   margin-bottom: 1rem;
   width: 90%;
   background-color: white;
   border-radius: 1.5rem;
+}
+.restaurant-card-new {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  border-radius: 0.1rem;
+  background-color: #a9e0d1;
+  color: #408a6e;
+  padding: 0.3rem;
 }
 .restaurant-card-img {
   max-height: 60%;
@@ -149,6 +161,7 @@ i.hearth-full.fa-solid {
 }
 .heart-icon i {
   position: absolute;
+  right: 0rem;
   font-size: 1.5rem;
 }
 .heart-icon i:hover {
