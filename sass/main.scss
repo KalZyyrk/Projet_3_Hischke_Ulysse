@@ -128,6 +128,9 @@ i.hearth-full.fa-solid {
 }
 i.hearth-empty.fa-regular {
     opacity: 100%;
+    &:hover {
+        opacity: 0%;
+    }
 }
 .heart-icon {
     display: flex;

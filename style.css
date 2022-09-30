@@ -145,6 +145,9 @@ i.hearth-full.fa-solid:hover {
 i.hearth-empty.fa-regular {
   opacity: 100%;
 }
+i.hearth-empty.fa-regular:hover {
+  opacity: 0%;
+}
 
 .heart-icon {
   display: flex;
