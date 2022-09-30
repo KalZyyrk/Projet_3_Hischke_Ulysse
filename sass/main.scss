@@ -119,22 +119,18 @@ body {
 }
 i.hearth-full.fa-solid {
     opacity: 0%;
-    &:hover {
-        opacity: 100%;
+}
+
+.heart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &:hover i.hearth-full.fa-solid{
+        opacity: 1;
         background-image: $grade;
         -webkit-background-clip: text;
         color: transparent;
     }
-}
-i.hearth-empty.fa-regular {
-    opacity: 100%;
-    &:hover {
-        opacity: 0%;
-    }
-}
-.heart-icon {
-    display: flex;
-    align-items: center;
     & i{
         position: absolute;
         font-size: 1.5rem;

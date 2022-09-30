@@ -135,23 +135,17 @@ body {
 i.hearth-full.fa-solid {
   opacity: 0%;
 }
-i.hearth-full.fa-solid:hover {
-  opacity: 100%;
+
+.heart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.heart-icon:hover i.hearth-full.fa-solid {
+  opacity: 1;
   background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
-}
-
-i.hearth-empty.fa-regular {
-  opacity: 100%;
-}
-i.hearth-empty.fa-regular:hover {
-  opacity: 0%;
-}
-
-.heart-icon {
-  display: flex;
-  align-items: center;
 }
 .heart-icon i {
   position: absolute;
