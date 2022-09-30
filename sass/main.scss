@@ -159,10 +159,16 @@ a {
     color: black;
 }
 footer {
-    padding: 1rem;
+    padding: 1.2rem;
     background-color: $darkbackground;
     color: white;
-    & img {
-        color: white;
+    & i{
+        width: 1rem;
+        margin-right: .7rem;
     }
+}
+.logo-txt {
+    font-size: 1.4rem;
+    font-family: "Shrikhand", cursive;
+    margin-bottom: 0.6rem;
 }
