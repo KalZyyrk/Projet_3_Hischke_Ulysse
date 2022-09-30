@@ -131,12 +131,31 @@ body {
   justify-content: space-between;
   padding: 1rem;
 }
+
+i.hearth-full.fa-solid {
+  opacity: 0%;
+}
+i.hearth-full.fa-solid:hover {
+  opacity: 100%;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+i.hearth-empty.fa-regular {
+  opacity: 100%;
+}
+
 .heart-icon {
   display: flex;
   align-items: center;
 }
 .heart-icon i {
+  position: absolute;
   font-size: 1.5rem;
+}
+.heart-icon i:hover {
+  color: transparent;
 }
 
 a {

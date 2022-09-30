@@ -117,11 +117,27 @@ body {
         }
     }
 }
+i.hearth-full.fa-solid {
+    opacity: 0%;
+    &:hover {
+        opacity: 100%;
+        background-image: $grade;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+i.hearth-empty.fa-regular {
+    opacity: 100%;
+}
 .heart-icon {
     display: flex;
     align-items: center;
-    & i {
+    & i{
+        position: absolute;
         font-size: 1.5rem;
+        &:hover {
+            color: transparent;
+        }
     }
 }
 a {
