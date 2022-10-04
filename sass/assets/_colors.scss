@@ -6,8 +6,17 @@ $primary-hover: #f4edfe;
 $darkbackground :#353535;
 $new-bg: #a9e0d1;
 $new: #408a6e;
+$light-primary: #a06be1;
+$light-secondary: #ff94e1;
 
 $title-font :"Shrikhand", cursive;
 
-
 $grade: linear-gradient($secondary, $primary);
+$lightgrade: linear-gradient($light-secondary ,$light-primary);
+
+@mixin shadow {
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+}
+@mixin shadow-hover {
+    box-shadow: 0.35rem 0.35rem 15px rgb(0 0 0 / 35%);
+}

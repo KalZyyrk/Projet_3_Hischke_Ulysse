@@ -56,6 +56,28 @@ body {
         margin: auto;
         color: white;
         background-image: $grade;
+        @include shadow;
+        transition-property: background-image;
+        transition: 300ms;
+        &:hover {
+            background-image: $lightgrade;
+            @include shadow-hover;
+        }
+    }
+}
+.btn {
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    margin: auto;
+    color: white;
+    background-image: $grade;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    transition-property: background-image;
+    transition: 300ms;
+    &:hover {
+        background-image: $lightgrade;
+        box-shadow: 0.35rem 0.35rem 15px rgb(0 0 0 / 35%);
     }
 }
 .guide {
@@ -73,11 +95,13 @@ body {
         background-color: $lightbackground;
         height: 5rem;
         border-radius: 1rem;
+        transition: 500ms;
         & span {
             margin-left: -1rem;
             margin-right: 2rem;
         }
         & i {
+            transition: 500ms;
             margin-right: 2rem;
         }
         &:hover {
@@ -135,22 +159,26 @@ body {
 
 i.hearth-full.fa-solid {
     opacity: 0%;
+    background-image: $grade;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+i.hearth-empty.fa-regular {
 }
 
 .heart-icon {
+    transition: 1s;
     position: relative;
     display: flex;
     align-items: center;
     &:hover i.hearth-full.fa-solid{
         opacity: 1;
-        background-image: $grade;
-        -webkit-background-clip: text;
-        color: transparent;
     }
     & i{
         position: absolute;
         right: 0rem;
         font-size: 1.5rem;
+        transition: 500ms;
         &:hover {
             color: transparent;
         }
@@ -167,6 +195,9 @@ footer {
     & i{
         width: 1rem;
         margin-right: .7rem;
+    }
+    a {
+        color: inherit;
     }
 }
 .logo-txt {
