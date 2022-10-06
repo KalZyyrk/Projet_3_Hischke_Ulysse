@@ -20,3 +20,18 @@ $lightgrade: linear-gradient($light-secondary ,$light-primary);
 @mixin shadow-hover {
     box-shadow: 0.35rem 0.35rem 15px rgb(0 0 0 / 35%);
 }
+.btn {
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    margin: auto;
+    color: white;
+    background-image: $grade;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    transition-property: background-image;
+    transition: 300ms;
+    &:hover {
+        background-image: $lightgrade;
+        box-shadow: 0.35rem 0.35rem 15px rgb(0 0 0 / 35%);
+    }
+}

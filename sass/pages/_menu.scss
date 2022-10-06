@@ -56,6 +56,12 @@ img {
                 & h3 {
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                & p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
             }
             &-select {

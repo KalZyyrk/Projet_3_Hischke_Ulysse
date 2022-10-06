@@ -1,7 +1,10 @@
-@import 'assets/colors';
+@import 'assets/assets';
+@import 'assets/animation';
 @import 'assets/icon';
-@import 'device/mobile';
 @import 'pages/menu';
+@media screen and (min-width: 680px){
+    @import 'device/tablette';
+};
 
 * {
     margin: 0;
@@ -65,21 +68,7 @@ body {
         }
     }
 }
-.btn {
-    text-align: center;
-    padding: 1rem 1.5rem;
-    border-radius: 30px;
-    margin: auto;
-    color: white;
-    background-image: $grade;
-    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
-    transition-property: background-image;
-    transition: 300ms;
-    &:hover {
-        background-image: $lightgrade;
-        box-shadow: 0.35rem 0.35rem 15px rgb(0 0 0 / 35%);
-    }
-}
+
 .guide {
     margin: 2rem 1.5rem;
     display: flex;
@@ -205,3 +194,7 @@ footer {
     font-family: "Shrikhand", cursive;
     margin-bottom: 0.6rem;
 }
+
+@media screen and (min-width: 990px){
+    @import 'device/desktop'
+};

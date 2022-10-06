@@ -1,0 +1,35 @@
+body {
+    max-width: none;
+}
+.title {
+    & img {
+        object-fit: contain;
+        height: 2rem;
+    }
+}
+.localisation {
+    height: 2rem;
+}
+.guide {
+    flex-direction: row;
+    flex-wrap: wrap;
+    & h2 {
+        width: 100%;
+    }
+    &-step {
+        width: calc(30% - 1rem);
+    }
+}
+.restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    row-gap: 1rem;
+    & h2 {
+        width: 100%;
+    }
+    &-card {
+        width: calc(50% - 1.5rem);
+    }
+}
