@@ -8,6 +8,7 @@
 }
 img {
     width: 100%;
+    max-height: 30rem;
     object-fit: cover;
 } 
 .menu {
@@ -40,8 +41,11 @@ img {
             justify-content: space-between;
             border-radius: 1.5rem;
             height: 5.3rem;
+            transform: scale(0);
             @include shadow;
             cursor: pointer;
+            animation: card-appear 0.6s;
+            animation-fill-mode: both;
             &-desc {
                 display: flex;
                 flex-direction: column;
@@ -57,11 +61,13 @@ img {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    width: 100%;
                 }
                 & p {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    width: 100%;
                 }
             }
             &-select {

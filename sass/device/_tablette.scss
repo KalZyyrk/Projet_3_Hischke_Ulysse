@@ -1,0 +1,18 @@
+.title {
+    & img {
+        object-fit: contain;
+        height: 4rem;
+    }
+}
+.restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem;
+    & h2 {
+        width: 100%;
+    }
+    &-card {
+        width: calc(50% - 1rem);
+    }
+}

@@ -2,15 +2,11 @@
 @import 'assets/animation';
 @import 'assets/icon';
 @import 'pages/menu';
-@media screen and (min-width: 680px){
-    @import 'device/tablette';
-};
 
 * {
     margin: 0;
 }
 body {
-    max-width: 400px;
     margin: 0;
     font-family: 'Roboto';
 }
@@ -194,7 +190,9 @@ footer {
     font-family: "Shrikhand", cursive;
     margin-bottom: 0.6rem;
 }
-
+@media screen and (min-width: 700px){
+    @import 'device/tablette';
+};
 @media screen and (min-width: 990px){
     @import 'device/desktop'
 };

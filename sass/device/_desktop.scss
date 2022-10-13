@@ -13,6 +13,7 @@ body {
 .guide {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 9rem;
     & h2 {
         width: 100%;
     }
@@ -24,12 +25,22 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    padding: 2rem;
     row-gap: 1rem;
     & h2 {
         width: 100%;
     }
     &-card {
         width: calc(50% - 1.5rem);
+    }
+}
+
+.menu {
+    &-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-part {
+        width: calc(33% - 1rem);
     }
 }
