@@ -82,7 +82,7 @@ img {
                 & i {
                     font-size: 2rem;
                     color: white;
-                    transform: rotate(180deg);
+                    transform: rotate(0deg);
                     transition: 1s;
               }
             }
@@ -98,7 +98,7 @@ img {
             &:hover &-select { 
                 margin-right: 0;
                 & i {
-                    transform: rotate(0deg);
+                    transform: rotate(360deg);
                 }
             }
         }

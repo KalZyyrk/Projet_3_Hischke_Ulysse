@@ -245,7 +245,7 @@ img {
 .menu-part-card-select i {
   font-size: 2rem;
   color: white;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   transition: 1s;
 }
 .menu-part-card-price {
@@ -261,7 +261,7 @@ img {
   margin-right: 0;
 }
 .menu-part-card:hover .menu-part-card-select i {
-  transform: rotate(0deg);
+  transform: rotate(360deg);
 }
 
 .commande-btn {
