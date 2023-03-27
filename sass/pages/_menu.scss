@@ -1,39 +1,47 @@
-.title{
+.title {
     position: relative;
+
     & a {
         position: absolute;
         left: 1.5rem;
         font-size: 1.6rem;
     }
 }
+
 img {
     width: 100%;
     max-height: 30rem;
     object-fit: cover;
-} 
+}
+
 .menu {
     position: relative;
     z-index: 1;
     background-color: $lightbackground;
     border-radius: 2rem 2rem 0 0;
+
     &-title {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: -2rem;
         padding: 1rem;
+
         & h1 {
             font-family: $title-font;
             font-weight: 300;
         }
     }
+
     &-part {
         margin: 1rem;
+
         & h2 {
             border-bottom: solid .3rem $new-bg;
             width: 15%;
         }
-        &-card{
+
+        &-card {
             overflow: hidden;
             margin-top: 1rem;
             background-color: white;
@@ -46,6 +54,7 @@ img {
             cursor: pointer;
             animation: card-appear 0.6s;
             animation-fill-mode: both;
+
             &-desc {
                 display: flex;
                 flex-direction: column;
@@ -57,12 +66,14 @@ img {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+
                 & h3 {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
                     width: 100%;
                 }
+
                 & p {
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -70,6 +81,7 @@ img {
                     width: 100%;
                 }
             }
+
             &-select {
                 margin-right: -4rem;
                 display: flex;
@@ -79,31 +91,36 @@ img {
                 min-width: 4rem;
                 background-color: $new-bg;
                 transition: 1s;
-                & i {
+
+                & svg {
                     font-size: 2rem;
                     color: white;
                     transform: rotate(0deg);
                     transition: 1s;
-              }
+                }
             }
+
             &-price {
                 display: flex;
                 justify-content: flex-start;
                 align-items: end;
-                margin-right:0.9rem;
+                margin-right: 0.9rem;
                 margin-bottom: 0.2rem;
                 min-width: 2rem;
                 font-weight: bold;
             }
-            &:hover &-select { 
+
+            &:hover &-select {
                 margin-right: 0;
-                & i {
+
+                & svg {
                     transform: rotate(360deg);
                 }
             }
         }
     }
 }
+
 .commande-btn {
     display: flex;
     justify-content: center;
@@ -111,6 +128,7 @@ img {
     width: 100%;
     height: 9rem;
 }
+
 button {
     width: 14rem;
     border: none;

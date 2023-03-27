@@ -242,7 +242,7 @@ img {
   background-color: #a9e0d1;
   transition: 1s;
 }
-.menu-part-card-select i {
+.menu-part-card-select svg {
   font-size: 2rem;
   color: white;
   transform: rotate(0deg);
@@ -260,7 +260,7 @@ img {
 .menu-part-card:hover .menu-part-card-select {
   margin-right: 0;
 }
-.menu-part-card:hover .menu-part-card-select i {
+.menu-part-card:hover .menu-part-card-select svg {
   transform: rotate(360deg);
 }
 
@@ -309,7 +309,7 @@ body {
 .localisation p {
   text-align: center;
 }
-.localisation i {
+.localisation svg {
   margin: 0.5rem;
 }
 
@@ -365,14 +365,14 @@ body {
   margin-left: -1rem;
   margin-right: 2rem;
 }
-.guide-step i {
+.guide-step svg {
   transition: 500ms;
   margin-right: 2rem;
 }
 .guide-step:hover {
   background-color: #f4edfe;
 }
-.guide-step:hover i {
+.guide-step:hover svg {
   color: #9356DC;
 }
 
@@ -420,10 +420,7 @@ body {
   padding: 1rem;
 }
 
-i.hearth-full.fa-solid {
-  opacity: 0%;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
+svg.hearth-full.fa-heart {
   color: transparent;
 }
 
@@ -433,16 +430,17 @@ i.hearth-full.fa-solid {
   display: flex;
   align-items: center;
 }
-.heart-icon:hover i.hearth-full.fa-solid {
-  opacity: 1;
+.heart-icon:hover svg.hearth-full.fa-heart {
+  opacity: 100%;
+  color: #FF79DA;
 }
-.heart-icon i {
+.heart-icon svg {
   position: absolute;
   right: 0rem;
   font-size: 1.5rem;
   transition: 500ms;
 }
-.heart-icon i:hover {
+.heart-icon svg:hover {
   color: transparent;
 }
 
@@ -456,7 +454,7 @@ footer {
   background-color: #353535;
   color: white;
 }
-footer i {
+footer svg {
   width: 1rem;
   margin-right: 0.7rem;
 }
